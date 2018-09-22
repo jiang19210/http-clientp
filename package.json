@@ -1,0 +1,13 @@
+{
+  "name": "http-clientp",
+  "version": "1.0.0",
+  "main": "./lib/http-clientp",
+  "scripts": {
+    "start": "node ./test/test"
+  },
+  "dependencies": {
+    "debug": "2.2.0",
+    "https-proxy-agent": "1.0.0",
+    "iconv-lite": "0.4.15"
+  }
+}
