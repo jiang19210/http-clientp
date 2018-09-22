@@ -55,7 +55,7 @@ describe('httpClient', function () {
             }, httpcontext);
         });
     });
-    describe('#get#httpContext#data', function () {
+    describe('#get#httpContext#data#将请求的数据附带到结果中', function () {
         it('should return 200 when in test environment', function (done) {
             var httpcontext = httpClient.build_httpcontext('GET', {'key': 'value'});
             httpClient.get('http://www.dianping.com/shanghai', function (err, body, res, httpContext) {
