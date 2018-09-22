@@ -1,10 +1,17 @@
 {
   "name": "http-clientp",
   "version": "1.0.01",
-  "main": "./lib/http-clientp",
+  "main": "../lib/http-clientp",
   "scripts": {
-    "start": "node ./test/test"
+    "start": "mocha"
   },
+  "keywords": [
+    "http-client",
+    "http",
+    "proxy"
+  ],
+  "author": "jiang19210",
+  "license": "ISC",
   "dependencies": {
     "debug": "2.2.0",
     "https-proxy-agent": "1.0.0",
