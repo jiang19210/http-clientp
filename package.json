@@ -1,6 +1,6 @@
 {
   "name": "http-clientp",
-  "version": "1.0.0",
+  "version": "1.0.01",
   "main": "./lib/http-clientp",
   "scripts": {
     "start": "node ./test/test"
