@@ -1,6 +1,6 @@
 {
   "name": "http-clientp",
-  "version": "1.0.01",
+  "version": "1.0.11",
   "main": "../lib/http-clientp",
   "scripts": {
     "start": "mocha"
@@ -8,7 +8,8 @@
   "keywords": [
     "http-client",
     "http",
-    "proxy"
+    "proxy",
+    "http-clientp"
   ],
   "author": "jiang19210",
   "license": "ISC",
