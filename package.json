@@ -12,7 +12,7 @@
     "http-clientp"
   ],
   "author": "jiang19210",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "debug": "2.2.0",
     "https-proxy-agent": "1.0.0",
