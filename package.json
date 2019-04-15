@@ -1,6 +1,6 @@
 {
   "name": "http-clientp",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": "./lib/http-clientp",
   "scripts": {
     "start": "mocha"
@@ -17,5 +17,9 @@
     "debug": "2.2.0",
     "https-proxy-agent": "1.0.0",
     "iconv-lite": "0.4.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiang19210/http-clientp"
   }
 }

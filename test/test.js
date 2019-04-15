@@ -42,24 +42,6 @@ describe('httpClient', function () {
             }, httpcontext);
         });
     });
-    describe('#http#get#request#proxy#本地必须启动8888端口的代理', function () {
-        it('should return 200 when in test environment', function (done) {
-            var httpcontext = {'request': {'proxy': {'host': proxy_hots, 'port': port}}};
-            httpClient.get(test_url, function (err, body, res, httpContext) {
-                assert.equal(200, res.statusCode);
-                done();
-            }, httpcontext);
-        });
-    });
-    describe('#http#get#request#http_proxy#本地必须启动8888端口的代理', function () {
-        it('should return 200 when in test environment', function (done) {
-            var httpcontext = {'request': {'http_proxy': proxy_url}};
-            httpClient.get(test_url, function (err, body, res, httpContext) {
-                assert.equal(200, res.statusCode);
-                done();
-            }, httpcontext);
-        });
-    });
     describe('#get#httpContext#data#将请求的数据附带到结果中', function () {
         it('should return 200 when in test environment', function (done) {
             var httpcontext = httpClient.build_httpcontext('GET', {'key': 'value'});
