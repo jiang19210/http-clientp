@@ -1,8 +1,8 @@
 const httpClient = require('../lib/http-clientp');
 const assert = require('assert');
-var proxy_hots = '10.211.55.13';
+var proxy_hots = '127.0.0.1';
 var port = '8888';
-var proxy_url = 'http://10.211.55.13:8888';
+var proxy_url = 'http://127.0.0.1:8888';
 var test_url = 'https://www.baidu.com/';
 
 describe('httpClient', function () {

@@ -21,7 +21,7 @@ httpcontext模板格式：
 {
 	"request":{
 		"proxy":{"host":"127.0.0.1","port":8888},//设置请求代理，共两种设置方式，任选其一即可
-		"http_proxy":"127.0.0.1:8888",    //设置请求代理，共两种设置方式，任选其一即可
+		"http_proxy":"http://127.0.0.1:8888",    //设置请求代理，共两种设置方式，任选其一即可
 		"headers":{},		
 		"encode":true,   //是否对url进行encodeURI操作，默认为true
 		"timeout":"1000", //请求超时
@@ -83,7 +83,7 @@ httpClient.request(httpcontext.request.options, function (err, body, res, httpCo
  ````
  * 代理请求，http_proxy方式
  ````
- var httpcontext = {'request': {'http_proxy': '127.0.0.1:8888'}};
+ var httpcontext = {'request': {'http_proxy': 'http://127.0.0.1:8888'}};
  httpClient.get(test_url, function (err, body, res, httpContext) {
      console.log(res.statusCode)
  }, httpcontext);
