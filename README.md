@@ -34,6 +34,33 @@ httpcontext模板格式：
 }
 ````
 *****
+* 基础用法
+````
+var options = {
+    "method":"GET",
+    "path":"https://www.baidu.com/"
+};
+httpClient.request(options, function (err, body, res, httpContext) {
+    console.log(res.statusCode)
+});
+****GET
+var httpcontext = httpClient.build_httpcontext('GET', {'key': 'value', 'url': 'https://www.baidu.com/'}, null, {'host': '127.0.0.1', 'port': 8888}, 1000);
+httpClient.request(httpcontext.request.options, function (err, body, res, httpContext) {
+    console.log(res.statusCode);
+    console.log(httpContext.data.key);
+    console.log(httpContext.data.url);
+}, httpcontext);
+****POST
+var httpcontext = httpClient.build_httpcontext('POST', {
+    'key': 'value',
+    'url': test_url
+}, 'a=1&b=2&c=3', {'host': '127.0.0.1', 'port': 8888}, 1000);
+httpClient.request(httpcontext.request.options, function (err, body, res, httpContext) {
+    console.log(res.statusCode);
+    console.log(httpContext.data.key);
+    console.log(httpContext.data.url);
+}, httpcontext);
+````
 * get请求
 ````
  httpClient.get('https://www.baidu.com/', function (err, body, res, httpContext) {
