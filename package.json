@@ -1,6 +1,6 @@
 {
   "name": "http-clientp",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "main": "./lib/http-clientp",
   "scripts": {
     "start": "mocha"
