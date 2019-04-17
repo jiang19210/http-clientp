@@ -25,11 +25,19 @@ httpcontext模板格式：
 		"headers":{},		
 		"encode":true,   //是否对url进行encodeURI操作，默认为true
 		"timeout":"1000", //请求超时
-		"postdata":"a=1&b=1"    //post请求参数
+		"postdata":"a=1&b=1"    //post请求参数,
+		 options: { 
+                    method: 'GET',
+                    path: 'https://www.npmjs.com/package/http-clientp' 
+                   }
 	},
 	"response":{
 		"charset":"",//返回编码
 		"statusCode":200
+	},
+	"data":{             //附带数据
+	    "key":"value",
+	    "key1":"value1"
 	}
 }
 ````

@@ -1,15 +1,18 @@
 {
   "name": "http-clientp",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "main": "./lib/http-clientp",
   "scripts": {
     "start": "mocha"
   },
   "keywords": [
     "http-client",
+    "httpclient",
+    "client",
     "http",
     "proxy",
-    "http-clientp"
+    "http-clientp",
+    "request"
   ],
   "author": "jiang19210",
   "license": "MIT",
