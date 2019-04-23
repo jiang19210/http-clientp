@@ -146,3 +146,16 @@ httpClient.request(httpcontext.request.options, function (err, body, res, httpCo
       console.log(res.statusCode)
   }, httpContext);
   ````
+  ````
+  var httpClient = require('../lib/http-clientp');
+  var fs = require('fs');
+  var httpcontext = {
+      'request': {
+          'http_proxy': 'http://127.0.0.1:8888',
+          'headers': {'Content-Type': 'image/jpeg;charset=UTF-8', 'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8'}
+      }, 'response': {'charset': 'buffer'}
+  };
+  httpClient.get('http://202.109.191.178:8081/wt-web/captcha?0.4344325280246917', function (err, body, res, httpContext) {
+      fs.writeFileSync("/Users/jgm/Downloads/chrome/captcha.png", body);
+  }, httpcontext);
+  ````
