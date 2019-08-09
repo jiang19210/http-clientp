@@ -1,7 +1,8 @@
 {
   "name": "http-clientp",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "main": "./lib/http-clientp",
+  "description": "Simplified HTTP/HTTPS/PROXY request client.",
   "scripts": {
     "start": "mocha"
   },
