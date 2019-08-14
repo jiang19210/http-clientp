@@ -18,7 +18,7 @@
   "author": "jiang19210",
   "license": "MIT",
   "dependencies": {
-    "debug": "2.2.0",
+    "debug": "4.1.1",
     "https-proxy-agent": "2.2.1",
     "iconv-lite": "0.4.15"
   },
