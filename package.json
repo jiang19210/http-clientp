@@ -1,6 +1,6 @@
 {
   "name": "http-clientp",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "main": "./lib/http-clientp",
   "description": "Simplified HTTP/HTTPS/PROXY request client.",
   "scripts": {
