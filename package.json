@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "debug": "4.1.1",
-    "https-proxy-agent": "2.2.1",
+    "https-proxy-agent": "2.2.3",
     "iconv-lite": "0.4.15"
   },
   "repository": {
