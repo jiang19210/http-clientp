@@ -1,6 +1,6 @@
 {
   "name": "http-clientp",
-  "version": "1.0.30",
+  "version": "1.0.32",
   "main": "./lib/http-clientp",
   "description": "Simplified HTTP/HTTPS/PROXY request client.",
   "scripts": {
@@ -20,7 +20,8 @@
   "dependencies": {
     "debug": "4.1.1",
     "https-proxy-agent": "2.2.1",
-    "iconv-lite": "0.4.15"
+    "iconv-lite": "0.4.15",
+    "agentkeepalive": "4.2.1"
   },
   "repository": {
     "type": "git",
