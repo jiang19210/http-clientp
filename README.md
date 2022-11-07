@@ -88,6 +88,13 @@ httpClient.request(httpcontext.request.options, function (err, body, res, httpCo
      console.log(res.statusCode)
  }, httpcontext);
  ````
+* 代理请求，http_proxy方式,支持proxy auth
+ ````
+ var httpcontext = {'request': {'http_proxy': 'http://username:password@127.0.0.1:8888'}};
+ httpClient.get(test_url, function (err, body, res, httpContext) {
+     console.log(res.statusCode)
+ }, httpcontext);
+ ````
  * 将请求的数据附带到结果中
  ````
  var httpcontext = httpClient.build_httpcontext('GET', {'key': 'value', 'city':'北京'});
